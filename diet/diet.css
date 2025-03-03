@@ -1,0 +1,150 @@
+:root{
+    --light-color: #cfdac9;
+    --dark-color: #203625;
+}
+@media(max-width:1140px){
+    .dish{
+        flex-direction: column !important;
+    }
+    .dish .actual{
+        margin: unset !important;
+    }
+    .dish .details{
+        margin: unset !important;
+        width: 625px !important;
+    }
+}
+@media(max-width: 600px){
+    .center{
+        padding: 0 30px;
+    }
+}
+
+body{
+    background-color: var(--dark-color);
+    margin: 0;
+    min-width: 750px;
+    position: relative;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 675px;
+}
+
+.nav{
+    background-color: #0B1F0F;
+}
+.nav a:first-child{
+    background-color: lime;
+    color: black;
+    padding: 5px 15px;
+}
+
+.intro{
+    background-color: var(--light-color);
+}
+.intro p, .intro h1, .intro h2{
+    color: var(--dark-color);
+}
+
+.para p{
+    text-transform: capitalize;
+}
+
+.dish{
+    display: flex;
+    margin-bottom: 150px;
+}
+.dish .actual{
+    margin: 0 15px;
+}
+.dish .actual img{
+    position: absolute;
+    width: 675px;
+    height: 350px;
+}
+.dish .actual .frnt{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 675px;
+    height: 350px;
+    transition: 1s;
+    position: relative;
+    z-index: 1;
+}
+.dish .actual .frnt:hover{
+    background: linear-gradient(rgba(2, 56, 0, 0.688),rgba(0, 60, 0, 0.825));
+}
+.dish .actual .border{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(lime 0% 0%, white 0% 100%);
+    border-radius: 50%;
+}
+.dish .actual .frnt:hover .border{
+    display: flex;
+}
+.dish .actual .frnt .info{
+    height: 95%;
+    width: 95%;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+}
+.dish .actual .frnt .info b{
+    font-size: 35px;
+    margin: 30px 0 10px;
+}
+.dish .actual .frnt .info span{
+    background-color: black;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.dish .actual button{
+    background-color: transparent;
+    border: none;
+    font-size: 60px;
+}
+.dish .actual a{
+    text-decoration: none;
+    color: black;
+}
+.dish .actual h1{
+    background-color: lime;
+    padding: 10px;
+    margin: 30px 0 0;
+    width: 655px;
+}
+.dish .actual h1 span{
+    background-color: greenyellow;
+    padding: 0 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.dish .details{
+    width: 325px;
+    background-color: var(--light-color);
+    padding: 25px;
+    margin: 0 15px;
+}
+.dish .details h2{
+    text-transform: uppercase;
+    font-family: sans-serif ;
+}
+.dish .details li{
+    font-size: 20px;
+    margin: 5px 0;
+}

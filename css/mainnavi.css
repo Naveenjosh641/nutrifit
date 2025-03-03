@@ -1,0 +1,163 @@
+@media(max-width: 800px){
+    .logo p:first-child{
+        display: none;
+    }
+    .logo p:nth-child(2){
+        display: inline-block !important;
+    }
+
+    .intro{
+        margin-top: 130px !important;
+    }
+    .intro .para p{
+        font-size: unset !important;
+    }
+    .intro img{
+        width: 200px !important;
+    }
+}
+@media(max-width: 600px){
+    .intro h1{
+        font-size: 8vw !important;
+    }
+}
+
+#header{
+    height: 100px;
+}
+header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    transition: 0.5s;
+    z-index: 2;
+}
+.logo{
+    font-size: 33px;
+    display: inline-block;
+    font-weight: bold;
+    background: linear-gradient(to right, #42FF3C,#85CAFC);
+    background-clip: text;
+    color: transparent;
+    
+}
+.logo p{
+    margin: 0;
+}
+.logo p:nth-child(2){
+    display: none;
+}
+.nav{
+    padding: 20px;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.probtn{
+    background: white;
+    border-radius: 50%;
+    border: 2px solid;
+    height: 53px;
+    padding: 0;
+}
+.probtn img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+#profile{
+    position: absolute;
+    right: 0;
+    height: 97%;
+    min-height: 700px;
+    max-height: 800px;
+    width: 450px;
+    background-color: white;
+    padding: 10px;
+    z-index: 3;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+#profile .btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#profile .btns button{
+    background-color: white;
+    border: none;
+}
+#profile .btns img{
+    height: 30px;
+}
+#profile .gen{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 7px gray;
+}
+#profile h2{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+#profile .sbs{
+    margin: 30px 0;
+    font-size: 20px;
+}
+#profile b{
+    display: inline-block;
+    width: 150px;
+}
+#profile p{
+    display: inline-block;
+}
+#profile .sbs .cap{
+    text-transform: capitalize;
+}
+#profile #bmi{
+    width: 400px;
+    height: 200px;
+}
+
+.intro{
+    display: inline-flex;
+    justify-content: center;
+    box-shadow: 10px 10px black;
+    margin: 120px 0 180px;
+}
+.intro .para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+.intro p, .intro h1, .intro h2{
+    font-family: sans-serif;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+.intro p{
+    font-size: 20px;
+}
+.intro h1{
+    font-size: 5vw;
+}
+.intro img{
+    aspect-ratio: 2/3;
+    width: 250px;
+}
