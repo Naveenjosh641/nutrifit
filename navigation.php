@@ -9,13 +9,12 @@
 <link rel="stylesheet" href="css/navigation.css">
 <body>
     <div id="header">
-        <div class="lheader"><a href="../">NutriFit</a></div>
+        <div class="lheader"><a href="index.html">NutriFit</a></div>
         <div id="login"><a href="login.html">Login</a></div>
         <div class="down">
-            <div class="rheader"><a onclick="clos()" href="../#bmi">BMI</a></div>
+            <div class="rheader"><a onclick="clos()" href="index.html/#bmi">BMI</a></div>
             <div class="rheader"><a onclick="clos()" href="diet.html">Diet</a></div>
             <div class="rheader"><a onclick="clos()" href="exercise.html">Exersises</a></div>
-            <div class="rheader"><a onclick="clos()" href="about.html">About Us</a></div>
         </div>
     </div>
 
