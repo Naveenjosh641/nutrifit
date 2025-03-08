@@ -2,10 +2,6 @@
 
 class Dbh{
     private $servername = "localhost";
-    private $username = "nfuser";
-    // private $password = "Santhosh@77";
-    private $password = "For(maxi)116";
-    private $dbname = "nutrifit";
 
     protected function connect(){
         try{
