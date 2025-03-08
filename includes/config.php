@@ -3,7 +3,7 @@
 session_set_cookie_params([
     'lifetime' => 0,
     'path' => '/',
-    'domain' => '192.168.29.105',
+    'domain' => '',
     'httponly' => true,
     'samesite' =>true
 ]);
